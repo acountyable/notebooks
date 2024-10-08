@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Notebooks for Findhow",
   "tasks": {
-    "mock:api": "npm install -g @stoplight/prism-cli && prism mock ./openapi.yaml --port 4000",
+    "mock:api": "npm install -g @stoplight/prism-cli && prism mock ./storage/openapi.yaml --port 4000",
     "jupyter:install": "deno jupyter --install",
     "jupyter:kernel": "jupyter-notebook --kernel deno"
   },
