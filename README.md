@@ -17,7 +17,7 @@ Deno.
 
 `deno task jupyter:install`
 
-4. Open a notebook in vscode and select the deno kernel
+4. Open a notebook in vscode and select the deno kernel (Select `Jupyter Kernel` > `Deno`)
 
 - Any file ending in `.ipynb` will be treated as a notebook, choose select
   kernel and select `deno`
