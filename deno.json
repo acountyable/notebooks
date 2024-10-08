@@ -4,10 +4,8 @@
   "description": "Notebooks for Findhow",
   "tasks": {
     "mock:api": "npm install -g @stoplight/prism-cli && prism mock ./openapi.yaml --port 4000",
-    "start": "deno task jupyter:install && deno task jupyter:kernel && deno task jupyter",
     "jupyter:install": "deno jupyter --install",
-    "jupyter:kernel": "jupyter notebook --kernel deno --unstable",
-    "jupyter": "deno run --allow-env --allow-read --allow-net --allow-plugin --watch --unstable"
+    "jupyter:kernel": "jupyter-notebook --kernel deno"
   },
   "exports": "./mod.ts",
   "nodeModulesDir": "auto",
