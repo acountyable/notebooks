@@ -7,6 +7,9 @@
     "jupyter:install": "deno jupyter --install",
     "jupyter:kernel": "jupyter-notebook --kernel deno"
   },
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ESNext"]
+  },
   "exports": "./mod.ts",
   "nodeModulesDir": "auto",
   "imports": {
