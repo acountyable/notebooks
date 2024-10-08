@@ -25,3 +25,8 @@ Deno.
 ![Select Kernel](./assets/1.select-kernel.png)
 
 ![Choose Deno Kernel](./assets/2.choose-deno-kernel.png)
+
+5. Bootup mock server for testing
+   [OpenApi Specification](./storage/openapi.yaml) schema
+
+`deno task mock:api`
