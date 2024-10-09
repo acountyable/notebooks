@@ -2,7 +2,6 @@ import * as MockFetch from "@pioneer/test/mock/fetch";
 import * as MockCommand from "@pioneer/test/mock/command";
 import { assertEquals } from "jsr:@std/assert";
 
-
 const { mockCommand, resetCommand } = MockCommand;
 
 Deno.test({
@@ -30,12 +29,12 @@ Deno.test({
 });
 
 Deno.test("Mock Fetch Works", async () => {
-		MockFetch.mockFetch("https://example.com", {
-		body: "Hello, world!",
-	});
+  MockFetch.mockFetch("https://example.com", {
+    body: "Hello, world!",
+  });
 
-	const resp = await fetch("https://example.com");
+  const resp = await fetch("https://example.com");
 
-	assertEquals(resp.status, 200);
-	assertEquals(await resp.text(), "Hello, world!");
+  assertEquals(resp.status, 200);
+  assertEquals(await resp.text(), "Hello, world!");
 });

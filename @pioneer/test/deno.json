@@ -1,11 +1,11 @@
 {
-	"name": "@pioneer/test",
-	"version": "0.0.1",
-	"description": "Test Pioneer Modules",
-	"exports": {
-		"./mock/fetch": "./mock/fetch.ts",
-		"./mock/command": "./mock/command.ts",
-		"./mock/module": "./mock/module/mod.ts",
-		"./asserts": "./asserts.ts"
-	}
+  "name": "@pioneer/test",
+  "version": "0.0.1",
+  "description": "Test Pioneer Modules",
+  "exports": {
+    "./mock/fetch": "./mock/fetch.ts",
+    "./mock/command": "./mock/command.ts",
+    "./mock/module": "./mock/module/mod.ts",
+    "./asserts": "./asserts.ts"
+  }
 }

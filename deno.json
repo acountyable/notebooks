@@ -5,7 +5,13 @@
   "tasks": {
     "mock:api": "npm install -g @stoplight/prism-cli && prism mock ./storage/openapi.yaml --port 4000",
     "jupyter:install": "deno jupyter --install",
-    "jupyter:kernel": "jupyter-notebook --kernel deno"
+    "jupyter:kernel": "jupyter-notebook --kernel deno",
+	"find-process": "deno run --allow-all npm:find-process",
+	"find-process:by-name": "deno run --allow-all npm:find-process --type name",
+	"find-process:by-port": "deno run --allow-all npm:find-process --type port",
+	"find-process:by-pid": "deno run --allow-all npm:find-process --type pid",
+	"find-process:help": "deno run --allow-all npm:find-process --help",
+	"nestjs:cli": "deno run --allow-all npm:@nestjs/cli"
   },
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ESNext"]

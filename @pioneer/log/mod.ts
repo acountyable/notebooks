@@ -1,7 +1,5 @@
-// logger.ts
-
 import { existsSync } from "@std/fs";
-import { yellow, green, blue, red, bold } from "@std/fmt/colors";
+import { blue, bold, green, red, yellow } from "@std/fmt/colors";
 
 /** Log Levels */
 enum LogLevels {
@@ -71,7 +69,10 @@ abstract class BaseHandler {
   private _levelName: string;
   formatter: (record: LogRecord) => string;
 
-  constructor(levelName: string, options?: { formatter?: (record: LogRecord) => string }) {
+  constructor(
+    levelName: string,
+    options?: { formatter?: (record: LogRecord) => string },
+  ) {
     const { formatter } = options ?? {};
     this.formatter = formatter ?? BaseHandler.defaultFormatter;
     this._levelName = levelName;
@@ -118,7 +119,13 @@ abstract class BaseHandler {
 class ConsoleHandler extends BaseHandler {
   private useColors: boolean;
 
-  constructor(levelName: string, options: { useColors?: boolean; formatter?: (record: LogRecord) => string } = {}) {
+  constructor(
+    levelName: string,
+    options: {
+      useColors?: boolean;
+      formatter?: (record: LogRecord) => string;
+    } = {},
+  ) {
     super(levelName, options);
     this.useColors = options.useColors ?? true;
   }
@@ -185,7 +192,9 @@ class RotatingFileHandler extends BaseHandler {
       throw new Error(`"maxBytes" must be >= 1: received ${this.maxBytes}`);
     }
     if (this.maxBackupCount < 1) {
-      throw new Error(`"maxBackupCount" must be >= 1: received ${this.maxBackupCount}`);
+      throw new Error(
+        `"maxBackupCount" must be >= 1: received ${this.maxBackupCount}`,
+      );
     }
 
     const openOptions: Deno.OpenOptions = {
@@ -212,7 +221,9 @@ class RotatingFileHandler extends BaseHandler {
         const backup = `${this.filename}.${i}`;
         if (existsSync(backup)) {
           this.destroy();
-          throw new Deno.errors.AlreadyExists(`Backup log file ${backup} already exists`);
+          throw new Deno.errors.AlreadyExists(
+            `Backup log file ${backup} already exists`,
+          );
         }
       }
     } else {
@@ -246,7 +257,11 @@ class RotatingFileHandler extends BaseHandler {
       }
     }
 
-    this.file = Deno.openSync(this.filename, { create: true, write: true, append: false });
+    this.file = Deno.openSync(this.filename, {
+      create: true,
+      write: true,
+      append: false,
+    });
   }
 
   flush() {
@@ -265,7 +280,11 @@ class Logger {
   private handlers: BaseHandler[];
   private loggerName: string;
 
-  constructor(loggerName: string, levelName: string, handlers: BaseHandler[] = []) {
+  constructor(
+    loggerName: string,
+    levelName: string,
+    handlers: BaseHandler[] = [],
+  ) {
     this.loggerName = loggerName;
     this.level = getLevelByName(levelName);
     this.handlers = handlers;
@@ -327,9 +346,11 @@ class Logger {
     } else if (data instanceof Error) {
       return data.stack ?? String(data);
     } else if (typeof data === "object") {
-      return `{${Object.entries(data)
-        .map(([k, v]) => `"${k}":${this.asString(v, true)}`)
-        .join(",")}}`;
+      return `{${
+        Object.entries(data)
+          .map(([k, v]) => `"${k}":${this.asString(v, true)}`)
+          .join(",")
+      }}`;
     }
     return "undefined";
   }
@@ -406,7 +427,9 @@ class LoggerManager {
         if (handler) {
           handlers.push(handler);
         } else {
-          throw new Error(`Handler "${handlerName}" not found for logger "${loggerName}"`);
+          throw new Error(
+            `Handler "${handlerName}" not found for logger "${loggerName}"`,
+          );
         }
       }
       const logger = new Logger(loggerName, loggerConfig.level, handlers);
@@ -499,18 +522,18 @@ if (import.meta.main) {
 }
 
 export {
-  LogLevels,
-  LogRecord,
   BaseHandler,
   ConsoleHandler,
-  RotatingFileHandler,
+  critical,
+  debug,
+  error,
+  getLogger,
+  info,
   Logger,
   LoggerManager,
-  getLogger,
+  LogLevels,
+  LogRecord,
+  RotatingFileHandler,
   setup,
-  debug,
-  info,
   warn,
-  error,
-  critical,
 };

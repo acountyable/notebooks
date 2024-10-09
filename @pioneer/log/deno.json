@@ -1,13 +1,9 @@
 {
-	"name": "@pioneer/log",
-	"version": "0.0.1",
-	"description": "Logging for Pioneer",
-	"exports": "./mod.ts",
-	"imports": {
-		"@pioneer/log": "./mod.ts"
-	},
-	"compilerOptions": {
-		"lib": ["deno.ns", "dom"],
-		"strict": true
-	}
+  "name": "@pioneer/log",
+  "version": "0.0.1",
+  "description": "Logging for Pioneer",
+  "exports": "./mod.ts",
+  "imports": {
+    "@pioneer/log": "./mod.ts"
+  }
 }
