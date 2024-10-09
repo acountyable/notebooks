@@ -1,0 +1,62 @@
+[2024-10-09T12:14:28.725Z] [INFO] [default] Info via utility function
+[2024-10-09T12:14:28.725Z] [WARN] [default] Warn via utility function
+[2024-10-09T12:14:28.725Z] [ERROR] [default] Error via utility function
+[2024-10-09T12:14:28.725Z] [CRITICAL] [default] Critical via utility function
+[2024-10-09T12:14:28.727Z] [INFO] [default] This is an info message
+[2024-10-09T12:14:28.727Z] [WARN] [default] This is a warning
+[2024-10-09T12:14:28.727Z] [ERROR] [default] This is an error
+[2024-10-09T12:14:28.727Z] [CRITICAL] [default] This is critical
+[2024-10-09T12:14:28.729Z] [INFO] [default] This is an info message
+[2024-10-09T12:14:28.729Z] [WARN] [default] This is a warning
+[2024-10-09T12:14:28.729Z] [CRITICAL] [default] This is critical
+[2024-10-09T12:14:28.729Z] [INFO] [default] Info via utility function
+[2024-10-09T12:14:28.729Z] [WARN] [default] Warn via utility function
+[2024-10-09T12:14:28.729Z] [ERROR] [default] Error via utility function
+[2024-10-09T12:14:28.729Z] [CRITICAL] [default] Critical via utility function
+[2024-10-09T12:14:31.516Z] [INFO] [default] Info via utility function
+[2024-10-09T12:14:31.516Z] [WARN] [default] Warn via utility function
+[2024-10-09T12:14:31.516Z] [ERROR] [default] Error via utility function
+[2024-10-09T12:14:31.516Z] [CRITICAL] [default] Critical via utility function
+[2024-10-09T12:14:31.519Z] [INFO] [default] This is an info message
+[2024-10-09T12:14:31.519Z] [WARN] [default] This is a warning
+[2024-10-09T12:14:31.519Z] [ERROR] [default] This is an error
+[2024-10-09T12:14:31.519Z] [CRITICAL] [default] This is critical
+[2024-10-09T12:14:31.520Z] [INFO] [default] This is an info message
+[2024-10-09T12:14:31.520Z] [WARN] [default] This is a warning
+[2024-10-09T12:14:31.520Z] [CRITICAL] [default] This is critical
+[2024-10-09T12:14:31.520Z] [INFO] [default] Info via utility function
+[2024-10-09T12:14:31.520Z] [WARN] [default] Warn via utility function
+[2024-10-09T12:14:31.520Z] [ERROR] [default] Error via utility function
+[2024-10-09T12:14:31.520Z] [CRITICAL] [default] Critical via utility function
+[2024-10-09T12:14:56.774Z] [INFO] [default] Info via utility function
+[2024-10-09T12:14:56.775Z] [WARN] [default] Warn via utility function
+[2024-10-09T12:14:56.775Z] [ERROR] [default] Error via utility function
+[2024-10-09T12:14:56.775Z] [CRITICAL] [default] Critical via utility function
+[2024-10-09T12:14:56.778Z] [INFO] [default] Info via utility function
+[2024-10-09T12:14:56.778Z] [WARN] [default] Warn via utility function
+[2024-10-09T12:14:56.778Z] [ERROR] [default] Error via utility function
+[2024-10-09T12:14:56.778Z] [CRITICAL] [default] Critical via utility function
+[2024-10-09T12:15:15.837Z] [INFO] [default] Info via utility function
+[2024-10-09T12:15:15.838Z] [WARN] [default] Warn via utility function
+[2024-10-09T12:15:15.838Z] [ERROR] [default] Error via utility function
+[2024-10-09T12:15:15.838Z] [CRITICAL] [default] Critical via utility function
+[2024-10-09T12:15:15.840Z] [INFO] [default] Info via utility function
+[2024-10-09T12:15:15.840Z] [WARN] [default] Warn via utility function
+[2024-10-09T12:15:15.840Z] [ERROR] [default] Error via utility function
+[2024-10-09T12:15:15.840Z] [CRITICAL] [default] Critical via utility function
+2024-10-09T12:22:27.830Z [20] [test] This is an info message
+2024-10-09T12:22:27.831Z [30] [test] This is a warning
+2024-10-09T12:22:27.831Z [40] [test] This is an error
+2024-10-09T12:22:27.831Z [50] [test] This is critical
+2024-10-09T12:22:27.832Z [20] [test] This is an info message
+2024-10-09T12:22:27.832Z [20] [test] This is an info message
+2024-10-09T12:22:27.832Z [30] [test] This is a warning
+2024-10-09T12:22:27.832Z [50] [test] This is critical
+2024-10-09T12:22:59.410Z [20] [test] This is an info message
+2024-10-09T12:22:59.410Z [30] [test] This is a warning
+2024-10-09T12:22:59.411Z [40] [test] This is an error
+2024-10-09T12:22:59.411Z [50] [test] This is critical
+2024-10-09T12:22:59.412Z [20] [test] an informative message
+2024-10-09T12:22:59.412Z [20] [test] This is an info message
+2024-10-09T12:22:59.412Z [30] [test] This is a warning
+2024-10-09T12:22:59.412Z [50] [test] This is critical

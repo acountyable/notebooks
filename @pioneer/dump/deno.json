@@ -1,0 +1,8 @@
+{
+	"name": "@pioneer/dump",
+	"version": "0.0.1",
+	"description": "Dump Deno's global scope",
+	"exports": {
+		".": "./mod.ts"
+	}
+}
